@@ -1,0 +1,19 @@
+  <view class="container" >
+  <nav active="{{tab}}" />
+  <scroll-view class="article-content" scroll-y   bindscrolltolower="getAllArticle">
+    <view bind:tap="jump" data-id="{{item.id}}" class="item" wx:for="{{article}}"  wx:key="{{index}}" >
+      <image src="{{item.author.avatar_url}}"></image>
+      <text class="tab" style="{{item.top && 'background: #80bd01;color: #ffffff;'}}">{{item.top ? '置顶' : tabs[item.tab]}}</text>
+      <view class="main">
+        <text class='title'>{{item.title}}</text> 
+        <view>
+          <text>{{item.reply_count}}/{{item.visit_count}}</text>
+          <text>{{'2015-09-09'}}</text>        
+        </view>           
+      </view>
+    </view>
+    <text wx:if="{{finish}}">{{'暂无更多数据'}}</text>
+  </scroll-view>
+</view>
+
+

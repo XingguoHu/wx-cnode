@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/good/good",
+    "pages/share/share",
+    "pages/ask/ask",
+    "pages/job/job",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "CNODE",
+    "navigationBarTextStyle": "black"
+  }
+}

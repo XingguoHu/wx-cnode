@@ -1,0 +1,6 @@
+<!--components/nav.wxml-->
+<view class="c-nav">
+  <view wx:for="{{navLists}}" wx:key="{{index}}" class="c-nav-item">
+    <navigator class="c-nav-item {{item.class}}" open-type="redirectTo" url="{{item.url}}">{{item.label}}</navigator>
+  </view>
+</view>

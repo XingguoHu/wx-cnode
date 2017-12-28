@@ -1,0 +1,28 @@
+<!--pages/detail/detail.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="detail-content">
+  <view class="intro">
+    <text class="tab">{{tabs[article.tab]}}</text>
+    <text class="title">{{article.title}}</text>
+  </view>
+  <view class="author">
+    <text>作者：{{article.author.loginname}}</text>
+    <text>浏览：{{article.visit_count}}</text>
+    <text>回复：{{article.reply_count}}</text>
+    <text>时间：2017-09-09</text>
+  </view>
+  <template is="wxParse" data="{{wxParseData:articleContent.nodes}}"/>
+  <view class='repaly'>
+    <text class="title">回复({{article.reply_count}})</text>
+    <view class="replay-item" wx:for="{{article.replies}}" wx:key="{{index}}">
+      <view class='replay-people'>
+          <image src='{{item.author.avatar_url}}'></image>
+          <text>{{item.author.loginname}}</text>
+      </view>
+      <view class="repaly-content">
+          <template is="wxParse" data="{{wxParseData:item.content.nodes}}"/>
+      </view>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,4 @@
+<!--pages/good/good.wxml-->
+<main tab="{{tab}}"/>
+
+

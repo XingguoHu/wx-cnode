@@ -1,0 +1,5 @@
+Page({
+  data: {
+    tab: 'share'
+  },
+})

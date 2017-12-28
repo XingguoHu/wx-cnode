@@ -1,0 +1,10 @@
+/**app.wxss**/
+view{
+  box-sizing: border-box;
+}
+page{
+  background-color: #e1e1e1;
+  padding:0 10rpx 10rpx 10rpx;
+  box-sizing: border-box;
+}
+

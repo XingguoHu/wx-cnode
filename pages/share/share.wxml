@@ -1,0 +1,4 @@
+<!--pages/share/share.wxml-->
+<main tab="{{tab}}"/>
+
+
